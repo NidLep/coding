@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Ringkas - Poliban DigiCraft</title>
+</head>
+<body>
+    <header>
+        <h2 align="center">Form Pemesanan Ringkas - Poliban DigiCraft &nbsp;&nbsp;&nbsp;<a href="kontak.html"><b>Kembali Ke Beranda</b></a></h2> 
+        <hr>
+    </header>
+        <P>
+            <img src="../gambar/mockup.jpg" width="200" height="200" alt="Mockup Desain" align="left"><br><br><br><br><b>Image</b><br> Deskripsi singkat tentang produk atau layanan yang ditawarkan oleh Poliban DigiCraft. Informasi tambahan untuk pengguna.
+            <br><br><br><br><br>
+        </p>
+    <section>
+        <br>
+        <table border="1" cellpadding="10" width="50%">
+            <tr bgcolor="005050">
+                <th>Paket Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Paket Basic</td>
+                <td>RP 50.000</td>
+            </tr>
+            <tr>
+                <td>Paket Standar</td>
+                <td>RP 100.000</td>
+            </tr>
+            <tr>
+                <td>Paket Premium</td>
+                <td>RP 150.000</td>
+            </tr>
+        </table>
+        <br>
+    </section>    
+    <main>
+        <fieldset>
+            <form action="#" method="POST">
+                <legend><b>Formulir Pemesanan</b></legend><br>
+
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama"><br><br>
+
+                    <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                    <label for="paket">Paket:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="paket" name="paket" required>
+                        <option value="">Pilih Paket</option>
+                        <option value="basic">Paket Basic</option>
+                        <option value="standar">Paket Standar</option>
+                        <option value="premium">Paket Premium</option>
+                    </select>
+                <br><br>
+            </form>
+            <button type="submit">Kirim Pemesanan</button>
+        </fieldset>
+    </main>
+</body>
+</html>
