@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Service</title>
+</head>
+<body>
+    <p>
+        <h2>Nama: Muhammad aldin Prasetyo 
+            <br> 
+            NIM: E030425102
+        </h2>
+    </p>
+
+    <h2>Kuis Praktikum: Form Pemesanan Service</h2>
+
+    <form action="#" method="post">
+        <Fieldset>
+            <Label For="Nama_Pelanggan">Nama Pelanggan:</Label>&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Nama_Pelanggan" id="Nama_Pelanggan" placeholder="Masukkan Nama">
+            <br><br>
+            <Label for="Kategori_Layanan">Kategori Layanan:</Label>
+           <select name="Kategori_Layanan" id="Kategori_Layanan" required>
+                <option value="Basic">Web Development (Basic)</option>
+                <option value="Premium">Web Development (Premium)</option>
+                <option value="Logo Desain">Graphic Desain</option>
+           </select>
+           <br><br>
+           <label for="Metode_Pembayaran">Metode Pembayaran:</label>
+           <input type="radio" name="Tranfer_Bank" value="Bank" id="kategori_bank" checked>
+           <label for="kategori_Bank">Transfer Bank</label>
+           <input type="radio" name="E_Wallet" value="Digital" id="kategori_digital">
+           <label for="kategori_digital">E-Walltet</label>
+           <br><br>
+           <button type="submit">Kirim Form</button>
+        </Fieldset>
+    </form>
+</body>
+</html>
