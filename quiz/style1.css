@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #008080;
+    --primary-dark: #005A5A;
+    --accent-color: #FF9800;
+    --white: #FFFFFF;
+    --text-muted: #666666;
+    --boder-solar: #E0E0E0;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition-fast: all 0.3s ease;
+    --secondary-color: #1A252C;
+    --bg-light: #F4F7F6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: #80C29E;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    background-color: var(--white);
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.container {
+    text-align: right;
+}
+
+th {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
