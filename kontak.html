@@ -33,32 +33,41 @@
                         <!-- Grup 1 : data diri pelanggan -->
                         <fieldset class="form-fieldset">
                             <legend>1. Informasi Identitas Pemesan</legend>
+
                             <div class="form-group">
-                                <label for="Nama Lengkap">Nama Lengkap / Instansi :</label>
+                                <label for="Nama Lengkap">Nama Lengkap / Instansi : <span
+                                        class="required">*</span></label>
                                 <input type="text" name="nama_lengkap" id="nama_lengkap"
                                     placeholder="contoh: Muhammmad Aldin Prasetyo" size="40" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="Email_Pemesan">Alamat Email Aktif:</label>
+                                <label for="Email_Pemesan">Alamat Email Aktif: <span class="required">*</span></label>
                                 <input type="email" name="email_pemesan" id="email_pemesan"
                                     placeholder="Nama@domain.com" size="40" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="No_whatsapp">Nomor HP / WhatsApp:</label>
+                                <label for="No_whatsapp">Nomor HP / WhatsApp: <span class="required">*</span></label>
                                 <input type="tel" name="no_whatsapp" id="no_whatsapp" placeholder="081234567890"
                                     required>
                             </div>
+
                             <div class="form-group">
                                 <label>Tipe kategori Klien:</label>
-                                <input type="radio" name="tipe_klien" value="Personal" id="Kategori_personal" checked>
-                                <label for="Kategori_personal">Perorangan / UMKM</label>
-                                <input type="radio" name="tipe_klien" value="korporat" id="Kategori_korporat">
-                                <label for="Kategori_korporat">Perusahaan / Instansi Pemerintah</label>
+                                <div class="radio-group">
+                                    <input type="radio" name="tipe_klien" value="Personal" id="Kategori_personal" checked>
+                                    <label for="Kategori_personal">Perorangan / UMKM</label>
+                                    <input type="radio" name="tipe_klien" value="korporat" id="Kategori_korporat">
+                                    <label for="Kategori_korporat">Perusahaan / Instansi Pemerintah</label>
+                                </div>
                             </div>
                         </fieldset>
+
                         <fieldset class="form-fieldset">
                             <!-- Grup 2 : Detail Pemesanan Layanan -->
                             <legend><b>2. Rincian Pemesanan Jasa Digital</b></legend>
+
                             <div class="form-group">
                                 <label for="pilih_paket">Pilih Paket Layanan (Lihat Katalog di Halaman Produk):</label>
                                 <select name="pilih_paket" id="pilih_paket" required>
@@ -70,6 +79,7 @@
                                     <option value="custom">Konsultasi Custom Project</option>
                                 </select>
                             </div>
+
                             <div class="form-group">
                                 <label>Layanan Tambahan (Add-Ons):</label>
                                 <input type="checkbox" name="addons[]" value="SEO Optimization" id="addon_seo">
@@ -79,10 +89,12 @@
                                 <input type="checkbox" name="addons[]" value="Content Writing" id="addon_content">
                                 <label for="addon_content">Penulisan Konten Artikel & copywriting (+Rp 400.000)</label>
                             </div>
+
                             <div class="form-group">
                                 <label for="target_selesai">EstimasiTarget Selesai:</label>
                                 <input type="date" name="target_selesai" id="target_selesai">
                             </div>
+
                             <div class="form-group">
                                 <label for="detail_pesan">Deskripsi / Catatan Khusus Proyek:</label>
                                 <textarea name="detail_pesan" id="detail_pesan" rows="6" cols="50"
